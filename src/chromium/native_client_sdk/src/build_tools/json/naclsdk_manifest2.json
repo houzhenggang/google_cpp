@@ -1,0 +1,171 @@
+{
+  "bundles": [
+    {
+      "archives": [
+        {
+          "checksum": {
+            "sha1": "0593db33d2f6f7dacf9ae4447e35463951f0dbe3"
+          },
+          "host_os": "all",
+          "size": 29701,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/trunk.306188/sdk_tools.tgz"
+        }
+      ],
+      "description": "Native Client SDK Tools, revision 306188",
+      "name": "sdk_tools",
+      "recommended": "yes",
+      "revision": 306188,
+      "stability": "stable",
+      "version": 1
+    },
+    {
+      "archives": [
+        {
+          "host_os": "win",
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/sdk/${revision}/vs_addin.tgz"
+        }
+      ],
+      "description": "Visual Studio Add-In for building and debugging NaCl applications",
+      "name": "vs_addin",
+      "recommended": "no",
+      "repath": "vs_addin",
+      "revision": 1578,
+      "stability": "dev",
+      "version": 0
+    },
+    {
+      "archives": [
+        {
+          "checksum": {
+            "sha1": "8e3e394d7269bab454361cd2eccd44f719de7039"
+          },
+          "host_os": "all",
+          "size": 73455859,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/33.0.1750.117/naclports.tar.bz2"
+        },
+        {
+          "checksum": {
+            "sha1": "6e883b9e76cc803db5d579933de070d3b707f1eb"
+          },
+          "host_os": "linux",
+          "size": 301049823,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/33.0.1750.117/naclsdk_linux.tar.bz2"
+        },
+        {
+          "checksum": {
+            "sha1": "0e47e9b841dfb5f75bdcdd1ebf0b501ab094a806"
+          },
+          "host_os": "mac",
+          "size": 261626911,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/33.0.1750.117/naclsdk_mac.tar.bz2"
+        },
+        {
+          "checksum": {
+            "sha1": "d9a34b8b19990273f97aa22559ed82d569ef751c"
+          },
+          "host_os": "win",
+          "size": 279181683,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/33.0.1750.117/naclsdk_win.tar.bz2"
+        }
+      ],
+      "description": "Chrome 33 bundle. Chrome revision: 252094. NaCl revision: 12558",
+      "name": "pepper_33",
+      "recommended": "no",
+      "repath": "pepper_33",
+      "revision": 252094,
+      "stability": "post_stable",
+      "version": 33
+    },
+    {
+      "archives": [],
+      "description": "Chrome 34 bundle, revision xxxxx",
+      "name": "pepper_34",
+      "recommended": "no",
+      "repath": "pepper_34",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 34
+    },
+    {
+      "archives": [],
+      "description": "Chrome 35 bundle, revision xxxxx",
+      "name": "pepper_35",
+      "recommended": "no",
+      "repath": "pepper_35",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 35
+    },
+    {
+      "archives": [],
+      "description": "Chrome 36 bundle, revision xxxxx",
+      "name": "pepper_36",
+      "recommended": "no",
+      "repath": "pepper_36",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 36
+    },
+    {
+      "archives": [],
+      "description": "Chrome 37 bundle, revision xxxxx",
+      "name": "pepper_37",
+      "recommended": "no",
+      "repath": "pepper_37",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 37
+    },
+    {
+      "archives": [],
+      "description": "Chrome 38 bundle, revision xxxxx",
+      "name": "pepper_38",
+      "recommended": "no",
+      "repath": "pepper_38",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 38
+    },
+    {
+      "archives": [],
+      "description": "Chrome 39 bundle, revision xxxxx",
+      "name": "pepper_39",
+      "recommended": "no",
+      "repath": "pepper_39",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 39
+    },
+    {
+      "archives": [],
+      "description": "Chrome 40 bundle, revision xxxxx",
+      "name": "pepper_40",
+      "recommended": "no",
+      "repath": "pepper_40",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 40
+    },
+    {
+      "archives": [],
+      "description": "Chrome Canary",
+      "name": "pepper_canary",
+      "recommended": "no",
+      "repath": "",
+      "revision": 0,
+      "stability": "canary",
+      "version": 0
+    },
+    {
+      "archives": [],
+      "description": "Bionic Canary",
+      "name": "bionic_canary",
+      "recommended": "no",
+      "repath": "",
+      "revision": 0,
+      "stability": "canary",
+      "version": 0
+    }
+  ],
+  "manifest_version": 2
+}

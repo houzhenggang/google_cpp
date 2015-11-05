@@ -1,0 +1,10 @@
+include_rules = [
+  "+components/favicon_base",
+  "+components/keyed_service",
+  "+components/query_parser",
+  "+net",
+  "+sql",
+  "+third_party/sqlite",
+  "+ui/base",
+  "+ui/gfx",
+]

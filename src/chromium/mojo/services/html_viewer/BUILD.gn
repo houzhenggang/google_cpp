@@ -1,0 +1,105 @@
+# Copyright 2014 The Chromium Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//mojo/public/mojo.gni")
+import("//mojo/public/mojo_application.gni")
+
+source_set("lib") {
+  sources = [
+    "ax_provider_impl.cc",
+    "ax_provider_impl.h",
+    "blink_basic_type_converters.cc",
+    "blink_basic_type_converters.h",
+    "blink_input_events_type_converters.cc",
+    "blink_input_events_type_converters.h",
+    "blink_platform_impl.cc",
+    "blink_platform_impl.h",
+    "blink_url_request_type_converters.cc",
+    "blink_url_request_type_converters.h",
+    "html_document.cc",
+    "html_document.h",
+    "mojo_blink_platform_impl.cc",
+    "mojo_blink_platform_impl.h",
+    "webclipboard_impl.cc",
+    "webclipboard_impl.h",
+    "webcookiejar_impl.cc",
+    "webcookiejar_impl.h",
+    "webmediaplayer_factory.cc",
+    "webmediaplayer_factory.h",
+    "webmimeregistry_impl.cc",
+    "webmimeregistry_impl.h",
+    "websockethandle_impl.cc",
+    "websockethandle_impl.h",
+    "webstoragenamespace_impl.cc",
+    "webstoragenamespace_impl.h",
+    "webthemeengine_impl.cc",
+    "webthemeengine_impl.h",
+    "webthread_impl.cc",
+    "webthread_impl.h",
+    "weburlloader_impl.cc",
+    "weburlloader_impl.h",
+    "weblayertreeview_impl.cc",
+    "weblayertreeview_impl.h",
+  ]
+
+  include_dirs = [ "third_party/WebKit" ]
+
+  deps = [
+    "//base",
+    "//base/third_party/dynamic_annotations",
+    "//cc",
+    "//cc/blink",
+    "//cc/surfaces",
+    "//gin",
+    "//media",
+    "//media/blink",
+    "//media/mojo",
+    "//mojo/application",
+    "//mojo/cc",
+    "//mojo/common",
+    "//mojo/converters/surfaces",
+    "//mojo/public/c/system:for_shared_library",
+    "//mojo/public/cpp/utility",
+    "//mojo/public/interfaces/application",
+    "//mojo/services/network/public/cpp",
+    "//mojo/services/view_manager/public/cpp",
+    "//mojo/services/accessibility/public/interfaces",
+    "//mojo/services/clipboard/public/interfaces",
+    "//mojo/services/content_handler/public/interfaces",
+    "//mojo/services/gpu/public/interfaces",
+    "//mojo/services/input_events/public/interfaces",
+    "//mojo/services/navigation/public/interfaces",
+    "//mojo/services/network/public/interfaces",
+    "//mojo/services/surfaces/public/interfaces",
+    "//net",
+    "//skia",
+    "//ui/native_theme",
+    "//url",
+  ]
+
+  public_deps = [
+    "//mojo/public/cpp/bindings",
+    "//third_party/WebKit/public:blink",
+  ]
+}
+
+mojo_native_application("html_viewer") {
+  sources = [
+    "html_viewer.cc",
+  ]
+  deps = [
+    ":lib",
+  ]
+}
+
+test("tests") {
+  output_name = "html_viewer_unittests"
+  sources = [
+    "ax_provider_impl_unittest.cc",
+  ]
+  deps = [
+    ":lib",
+    "//base/test:run_all_unittests",
+  ]
+}
